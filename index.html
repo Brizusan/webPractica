@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Cursos</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.scrollomatic.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/prefixfree.js"></script>
+
+    <!-- Animacion de Scroll -->
+    <script>
+        $(document).ready(function() {
+            $("a.scroll").scrollomatic();
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <!-- header+main#contenido>footer -->
+    <header>
+        <!-- a>div#logo^nav>ul>li*4>a -->
+        <a href="#Home" class="scroll">
+            <div id="logo"></div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#Home" class="scroll">Home</a></li>
+                <li><a href="#Temas" class="scroll">Temas</a></li>
+                <li><a href="#Galeria" class="scroll">Galeria</a></li>
+                <li><a href="#Contacto" class="scroll"> Contactenos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main id="contenido">
+        <!-- video>source[src=video/ type=video/]*3+p^+section#home+section#temas+section#galeria+section#contacto -->
+        <video autoplay loop preload="auto">
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.ogv" type="video/ogv">
+            <source src="video/video.webm" type="video/webm">
+            <p>Su Navegador no soporta el elemento de video</p>
+        </video>
+        <section id="Home">
+            <!-- #globo+h2+p+a+#abajo -->
+            <div id="globo"></div>
+            <h2>Bienvenido al Web de Cursos <span>Front y Backend</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugiat, maiores deserunt tenetur inventore sint, enim debitis facilis temporibus, rerum aperiam facere magnam laborum itaque eveniet? Laboriosam placeat quo autem!</p>
+            <a href="#Temas">Conozca Más</a>
+            <div id="abajo"></div>
+        </section>
+        <section id="Temas">
+            <!-- h3+article>(#imagen$+h4+p+a)*3 -->
+            <h3>Temas</h3>
+            <article>
+                <div id="imagen1"></div>
+                <h4>Subtitulo de nivel 4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nostrum modi enim, sint quaerat iure nesciunt corporis cupiditate assumenda asperiores?</p>
+                <a href="">Leer más</a>
+                <div id="imagen2"></div>
+                <h4>Subtitulo de nivel 4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nostrum modi enim, sint quaerat iure nesciunt corporis cupiditate assumenda asperiores?</p>
+                <a href="">Leer más</a>
+                <div id="imagen3"></div>
+                <h4>Subtitulo de nivel 4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nostrum modi enim, sint quaerat iure nesciunt corporis cupiditate assumenda asperiores?</p>
+                <a href="#">Leer más</a>
+            </article>
+        </section>
+        <section id="Galeria">
+            <!-- h3+#fotos>a[href=# title=imagen$]*9[src=img/$.jpg alt=img$] -->
+            <h3>Galeria</h3>
+            <div id="fotos">
+                <img href="#" title="imagen1" src="img/1.jpg" alt="img1"></img>
+                <img href="#" title="imagen2" src="img/2.jpg" alt="img2"></img>
+                <img href="#" title="imagen3" src="img/3.jpg" alt="img3"></img>
+                <img href="#" title="imagen4" src="img/4.jpg" alt="img4"></img>
+                <img href="#" title="imagen5" src="img/5.jpg" alt="img5"></img>
+                <img href="#" title="imagen6" src="img/6.jpg" alt="img6"></img>
+                <img href="#" title="imagen7" src="img/7.jpg" alt="img7"></img>
+                <img href="#" title="imagen8" src="img/8.jpg" alt="img8"></img>
+                <img href="#" title="imagen9" src="img/9.jpg" alt="img9"></img>
+            </div>
+        </section>
+        <section id="Contacto">
+            <!-- h3+#formulario>form:post>input:t+input:email+input+tel+texarea+input:s^^#mapa+a -->
+            <h3>Contactenos</h3>
+            <div id="formulario">
+                <form action="" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="telefono" placeholder="telefonó" pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{4}$" title="Debe ser un número telefónico con las estructura xxx xxx xxx,teniendo en cuenta los espacios" required>
+
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <input type="submit" value="Enviar Datos">
+                </form>
+            </div>
+            <div id="mapa">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d62427.46441322061!2d-77.0296179!3d-12.0630149!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1599945620480!5m2!1ses-419!2spe" width="600" height="450" aria-hidden="false" tabindex="0"></iframe>
+
+
+            </div>
+            <a href="#contenido" class="arriba"></a>
+
+
+        </section>
+
+
+        <footer>
+            <!-- p{Copyright &copy; 2020 Cesar Zubilete -Todos los derechos Reservados} -->
+            <p>Copyright &copy; 2020 Cesar Zubilete -Todos los derechos Reservados</p>
+
+        </footer>
+    </main>
+
+
+</body>
+
+</html>
